@@ -1,30 +1,32 @@
-1. Initial setup
+# ReactJs - Notes while learning
+
+## Initial setup
   Install node
   Install Visual Studio Code
 
-2. Creating an app 
-  2.1 using npx
+## Creating an app 
+  ### using npx
     npx create-react-app hello-world
     cd hello-world
     npm start
-  2.2 using npm
+  ### using npm
     npm install create-react-app -g
     create-react-app hello-world
 
-3. Control flow
+## Control flow
   /public/index.html
   /src/index.js
   /src/App.js
 
-4. Components
-  4.1 Functional Components - stateless
+## Components
+  ### Functional Components - stateless
     props - optional parameter
     just returns jsx
       use as much as possible
       no need to worry about this keyword
       mainly responsible for UI
   
-  4.2 Class Components - stateful
+  ### Class Components - stateful
     typical ES6 class
     extends React.Component
     props - optional parameter
@@ -34,24 +36,24 @@
       complex UI logic
       lifecycle hooks
 
-5. JSX - JavaScript XML 
+## JSX - JavaScript XML 
   xml like code for elements and Components
   has tag name, attributes and children
 
-6. Props
+## Props
   Passed from Parent component (attributes) to child component.
   Functional parameters
   immutable - child component cannot change the props value
   Functional components - props parameter
   Class components - this.props
 
-7. State
+## State
   Managed within the component
   Variables are declared in the function body
   Mutable - can be changed
   Functional components - useState Hook
   Class component - this.state
 
-  7.1 setState() in Class components
+  ### setState() in Class components
     React groups multiple setState() calls into one for better performance
     if state has to be set based on previous state, use function as first arg for setState()
