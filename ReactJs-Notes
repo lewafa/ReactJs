@@ -38,4 +38,20 @@
   xml like code for elements and Components
   has tag name, attributes and children
 
+6. Props
+  Passed from Parent component (attributes) to child component.
+  Functional parameters
+  immutable - child component cannot change the props value
+  Functional components - props parameter
+  Class components - this.props
 
+7. State
+  Managed within the component
+  Variables are declared in the function body
+  Mutable - can be changed
+  Functional components - useState Hook
+  Class component - this.state
+
+  7.1 setState() in Class components
+    React groups multiple setState() calls into one for better performance
+    if state has to be set based on previous state, use function as first arg for setState()
