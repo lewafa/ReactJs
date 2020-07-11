@@ -34,6 +34,8 @@ function App() {
       <h1>6. Class Components with State</h1>
       <ClassWithState />
       <ClassStateCounter />
+
+      <h1>7. Event handling</h1>
     </div> 
   );
 }
