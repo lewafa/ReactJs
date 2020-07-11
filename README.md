@@ -1,8 +1,9 @@
 # ReactJs - Notes while learning
 
 ## Initial setup
-- Install node
-- Install Visual Studio Code
+1. [Install node](https://nodejs.org/en/)
+2. [Install Visual Studio Code](https://code.visualstudio.com/)
+   - Install the extenstion: [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 
 ## Creating an app 
 ### using npx
