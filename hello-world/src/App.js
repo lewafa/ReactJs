@@ -36,6 +36,8 @@ function App() {
       <ClassStateCounter />
 
       <h1>7. Event handling</h1>
+
+      <h1>8. </h1>
     </div> 
   );
 }
