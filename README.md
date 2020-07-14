@@ -91,3 +91,36 @@ this.bestClickHandler = this.bestClickHandler.bind(this);
 
 ## Methods as props
 - used in child components to pass values back to the parent component
+
+## Conditional Rendering
+- use if-else blocks to return jsx directly
+```
+if (this.state.isLoggedIn) {
+  return <div>Welcome Saravana</div>;
+} else {
+  return <div>Welcome Guest</div>;
+}
+```
+- use if-else blocks with local variable and then return jsx
+```
+let message;
+if (this.state.isLoggedIn) {
+  message = <div>Welcome Saravana</div>;
+} else {
+  message = <div>Welcome Guest</div>;
+}
+
+return <div>{message}</div>;
+```
+- use terinary operator
+```
+return this.state.isLoggedIn ? (
+  <div>Welcome Saravana</div>
+) : (
+  <div>Welcome Guest</div>
+);
+```
+- use short circuit operator
+```
+return this.state.isLoggedIn && <div>Welcome Saravana</div>;
+```

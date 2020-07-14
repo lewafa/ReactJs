@@ -12,6 +12,7 @@ import FunctionalEventHandling from './components/FunctionalEventHandling';
 import ClassEventHandling from './components/ClassEventHandling';
 import EventBinding from './components/EventBinding';
 import ParentComponent1 from './components/ParentComponent1';
+import ConditionalRendering from './components/ConditionalRendering';
 
 function App() {
   return (
@@ -49,7 +50,12 @@ function App() {
       <h1>9. Methods as props</h1>
       <ParentComponent1 />
 
-      <h1>10. </h1>
+      <h1>10. Conditional Rendering</h1>
+      <ConditionalRendering />
+
+      <h1>11. List Rendering</h1>
+      <a href="https://www.youtube.com/watch?v=5s8Ol9uw-yM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=17">ReactJS Tutorial - 17 - List Rendering</a>
+
     </div> 
   );
 }
