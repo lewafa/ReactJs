@@ -54,7 +54,6 @@ function App() {
       <ConditionalRendering />
 
       <h1>11. List Rendering</h1>
-      <a href="https://www.youtube.com/watch?v=5s8Ol9uw-yM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=17">ReactJS Tutorial - 17 - List Rendering</a>
 
     </div> 
   );
