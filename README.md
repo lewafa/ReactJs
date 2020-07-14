@@ -63,3 +63,31 @@ npm start
 ### setState() in Class components
 - React groups multiple setState() calls into one for better performance
 - if state has to be set based on previous state, use function as first arg for setState()
+
+## Event Handling
+### Event Handling in Functional components
+- handler should be a function defined inside the main component function
+- event name should be camelCase. Example: onClick
+- handler function should be within {}
+
+### Event Handling in Class components
+- same rules as functional component
+- event handler function should be invoked using this keyword
+
+#### Event binding in Class components 
+- complicated due to this keyword
+  1. bind directly in the event method using .bind(this) - has scalability and performance isses
+```
+<button onClick={this.clickHandler.bind(this)}>Click</button>
+```
+  2. use arrow functions - has performance issues
+```
+<button onClick={() => this.clickHandler()}>Click</button>   
+```
+  3. bind in constructor - most preferred method
+```
+this.bestClickHandler = this.bestClickHandler.bind(this);
+```
+
+## Methods as props
+- used in child components to pass values back to the parent component

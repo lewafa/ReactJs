@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import FunctionalComponent from './components/FunctionalComponent';
 import ClassComponent from './components/ClassComponent';
@@ -8,6 +8,10 @@ import FunctionalWithProps from './components/FunctionalWithProps';
 import ClassWithProps from './components/ClassWithProps';
 import ClassWithState from './components/ClassWithState';
 import ClassStateCounter from './components/ClassStateCounter';
+import FunctionalEventHandling from './components/FunctionalEventHandling';
+import ClassEventHandling from './components/ClassEventHandling';
+import EventBinding from './components/EventBinding';
+import ParentComponent1 from './components/ParentComponent1';
 
 function App() {
   return (
@@ -36,10 +40,16 @@ function App() {
       <ClassStateCounter />
 
       <h1>7. Event handling</h1>
+      <FunctionalEventHandling />
+      <ClassEventHandling />
 
-      <h1>8. </h1>
+      <h1>8. Binding Event handlers in Class Components</h1>
+      <EventBinding />
 
-      <h1>9. </h1>
+      <h1>9. Methods as props</h1>
+      <ParentComponent1 />
+
+      <h1>10. </h1>
     </div> 
   );
 }
