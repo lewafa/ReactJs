@@ -13,6 +13,9 @@ import ClassEventHandling from './components/ClassEventHandling';
 import EventBinding from './components/EventBinding';
 import ParentComponent1 from './components/ParentComponent1';
 import ConditionalRendering from './components/ConditionalRendering';
+import FunctionalListRendering from './components/FunctionalListRendering';
+import Stylesheet from './components/Stylesheet';
+import Form from './components/Form';
 
 function App() {
   return (
@@ -51,10 +54,16 @@ function App() {
       <ParentComponent1 />
 
       <h1>10. Conditional Rendering</h1>
-      <ConditionalRendering />
+      <ConditionalRendering /> 
 
       <h1>11. List Rendering</h1>
+      <FunctionalListRendering />
 
+      <h1>12. Styling and CSS</h1>
+      <Stylesheet primary={true} />
+
+      <h1>13. Forms</h1>
+      <Form />
     </div> 
   );
 }
