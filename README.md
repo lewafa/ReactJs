@@ -125,4 +125,50 @@ return this.state.isLoggedIn ? (
 return this.state.isLoggedIn && <div>Welcome Saravana</div>;
 ```
 
-[ReactJS Tutorial - 17 - List Rendering](https://www.youtube.com/watch?v=5s8Ol9uw-yM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=17)
+## List rendering
+"key" is a special string attribute included when creating lists of elements.
+Keys give the elements a stable indentity.
+Keys help identify which items have been changed, added or removed.
+Helps in efficient update of user interface.
+
+```
+const personList = persons.map(person => (
+  <h3 key={person.id}>
+    I am {person.name}. I am {person.age} years old. I know {person.skill}.
+  </h3>
+));
+
+return <div>{personList}</div>;
+```
+Note: key value is not accessible in the child component. If you need it, pass it as a different prop.
+
+## Styling and CSS
+1. CSS Stylesheets
+2. Inline styling
+3. CSS modules
+   - scoped within the component. Cannot be used in child components.
+4. CSS in JS libraries (styled components)
+
+
+## Form Handling
+
+## Component lifecycle methods
+There are 4 phases for class components:
+1. Mounting - when an instance is being created and inserted into DOM
+   - constructor
+   - static getDerivedStateFromProps
+   - render
+   - componentDidMount
+2. Updating - when re-rendered as result of changes to props or state
+   - static getDerivedStateFromProps
+   - shouldComponentUpdate
+   - render
+   - getSnapshotBeforeUpdate
+   - componentDidUpdate
+3. Unmounting - when removed from DOM
+   - componentWillUnmount
+4. Error handling - when there is an error in rendering, in a lifecycle method or in constructor of any child component
+   - static getDerivedStateFromError
+   - componentDidCatch
+
+[ReactJS Tutorial - 23 - Component Mounting Lifecycle Methods](https://www.youtube.com/watch?v=KDXZibVdiEI&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=23)
